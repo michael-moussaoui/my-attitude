@@ -1,0 +1,202 @@
+{
+    "common": {
+        "loading": "Chargement...",
+        "error": "Erreur",
+        "success": "Succès",
+        "cancel": "Annuler",
+        "confirm": "Confirmer",
+        "save": "Enregistrer",
+        "delete": "Supprimer",
+        "edit": "Modifier",
+        "back": "Retour",
+        "next": "Suivant",
+        "previous": "Précédent",
+        "search": "Rechercher",
+        "filter": "Filtrer",
+        "clear": "Effacer",
+        "submit": "Soumettre",
+        "close": "Fermer"
+    },
+    "navigation": {
+        "home": "Accueil",
+        "book": "Réserver",
+        "painMap": "Carte Douleur",
+        "history": "Historique",
+        "profile": "Profil",
+        "admin": "Admin",
+        "dashboard": "Tableau de bord",
+        "clients": "Clients",
+        "sessions": "Séances",
+        "analytics": "Analyses",
+        "media": "Médiathèque",
+        "settings": "Paramètres"
+    },
+    "auth": {
+        "signIn": "Se connecter",
+        "signUp": "S'inscrire",
+        "signOut": "Se déconnecter",
+        "email": "Email",
+        "password": "Mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "forgotPassword": "Mot de passe oublié ?",
+        "resetPassword": "Réinitialiser le mot de passe",
+        "createAccount": "Créer un compte",
+        "alreadyHaveAccount": "Vous avez déjà un compte ?",
+        "dontHaveAccount": "Vous n'avez pas de compte ?"
+    },
+    "home": {
+        "welcome": "Bienvenue chez Attitude Cryo",
+        "subtitle": "Votre expérience de cryothérapie personnalisée",
+        "quickActions": "Actions rapides",
+        "bookSession": "Réserver une séance",
+        "viewHistory": "Voir l'historique",
+        "scanQR": "Scanner QR Code",
+        "recentSessions": "Séances récentes",
+        "upcomingSessions": "Séances à venir"
+    },
+    "booking": {
+        "title": "Réserver une séance",
+        "selectTherapy": "Sélectionner le type de thérapie",
+        "cryotherapy": "Cryothérapie",
+        "infratherapy": "Infrathérapie",
+        "teslaFormer": "Tesla Former",
+        "selectDate": "Sélectionner la date",
+        "selectTime": "Sélectionner l'heure",
+        "selectSymptoms": "Sélectionner les symptômes",
+        "selectPainAreas": "Sélectionner les zones douloureuses",
+        "additionalNotes": "Notes supplémentaires",
+        "confirmBooking": "Confirmer la réservation",
+        "bookingConfirmed": "Réservation confirmée !",
+        "therapyTypes": {
+            "cryotherapy": {
+                "name": "Cryothérapie",
+                "description": "Thérapie par le froid pour la récupération et le bien-être",
+                "duration": "3-5 minutes",
+                "temperature": "-110°C à -140°C"
+            },
+            "infratherapy": {
+                "name": "Infrathérapie",
+                "description": "Thérapie infrarouge pour la guérison des tissus profonds",
+                "duration": "15-30 minutes",
+                "temperature": "40°C à 60°C"
+            },
+            "teslaFormer": {
+                "name": "Tesla Former",
+                "description": "Thérapie de stimulation musculaire électromagnétique",
+                "duration": "20-30 minutes",
+                "intensity": "Ajustable"
+            }
+        }
+    },
+    "painMap": {
+        "title": "Carte de la douleur",
+        "selectAreas": "Sélectionnez vos zones douloureuses",
+        "front": "Face",
+        "back": "Dos",
+        "intensity": "Intensité de la douleur",
+        "mild": "Légère",
+        "moderate": "Modérée",
+        "severe": "Sévère",
+        "bodyParts": {
+            "head": "Tête",
+            "neck": "Cou",
+            "shoulders": "Épaules",
+            "arms": "Bras",
+            "chest": "Poitrine",
+            "back": "Dos",
+            "abdomen": "Abdomen",
+            "hips": "Hanches",
+            "legs": "Jambes",
+            "knees": "Genoux",
+            "feet": "Pieds"
+        }
+    },
+    "history": {
+        "title": "Historique des séances",
+        "noSessions": "Aucune séance trouvée",
+        "sessionDetails": "Détails de la séance",
+        "date": "Date",
+        "time": "Heure",
+        "therapy": "Thérapie",
+        "duration": "Durée",
+        "rating": "Évaluation",
+        "notes": "Notes",
+        "images": "Images",
+        "feedback": "Commentaires"
+    },
+    "profile": {
+        "title": "Profil",
+        "personalInfo": "Informations personnelles",
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "phone": "Téléphone",
+        "dateOfBirth": "Date de naissance",
+        "preferences": "Préférences",
+        "language": "Langue",
+        "notifications": "Notifications",
+        "privacy": "Confidentialité",
+        "support": "Support",
+        "about": "À propos"
+    },
+    "qr": {
+        "title": "Scanner QR Code",
+        "scanInstruction": "Pointez votre caméra vers le QR code",
+        "sessionLogged": "Séance enregistrée avec succès !",
+        "invalidCode": "QR code invalide",
+        "permissionDenied": "Permission de caméra refusée"
+    },
+    "feedback": {
+        "title": "Commentaires sur la séance",
+        "rate": "Évaluez votre séance",
+        "comment": "Laissez un commentaire",
+        "submit": "Soumettre les commentaires",
+        "thankYou": "Merci pour vos commentaires !"
+    },
+    "admin": {
+        "dashboard": {
+            "title": "Tableau de bord Admin",
+            "totalSessions": "Total des séances",
+            "activeClients": "Clients actifs",
+            "averageRating": "Note moyenne",
+            "revenue": "Revenus",
+            "topSymptoms": "Principaux symptômes",
+            "sessionsByTherapy": "Séances par thérapie",
+            "clientSatisfaction": "Satisfaction client"
+        },
+        "clients": {
+            "title": "Gestion des clients",
+            "addClient": "Ajouter un client",
+            "clientDetails": "Détails du client",
+            "sessionHistory": "Historique des séances",
+            "totalSessions": "Total des séances",
+            "lastVisit": "Dernière visite",
+            "status": "Statut",
+            "active": "Actif",
+            "inactive": "Inactif"
+        },
+        "sessions": {
+            "title": "Gestion des séances",
+            "addSession": "Ajouter une séance",
+            "editSession": "Modifier la séance",
+            "sessionDetails": "Détails de la séance",
+            "client": "Client",
+            "room": "Salle",
+            "status": "Statut",
+            "scheduled": "Programmée",
+            "completed": "Terminée",
+            "cancelled": "Annulée"
+        }
+    },
+    "symptoms": {
+        "muscleStiffness": "Raideur musculaire",
+        "jointPain": "Douleur articulaire",
+        "inflammation": "Inflammation",
+        "fatigue": "Fatigue",
+        "stressRelief": "Soulagement du stress",
+        "recovery": "Récupération",
+        "weightLoss": "Perte de poids",
+        "skinHealth": "Santé de la peau",
+        "sleepImprovement": "Amélioration du sommeil",
+        "immuneBoost": "Renforcement immunitaire"
+    }
+}
