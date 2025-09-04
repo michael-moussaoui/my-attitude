@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "527078342861",
+    "project_id": "attitudecryo-2e10d",
+    "storage_bucket": "attitudecryo-2e10d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527078342861:android:c3e9c256758fe11d26e984",
+        "android_client_info": {
+          "package_name": "com.lankey.myattitude"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527078342861-r9st4q8r520cathnhifeh0i953e6b3s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXEU0V1dFcaaTgw1qcwIX8rJ8NSuT7Rdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527078342861-r9st4q8r520cathnhifeh0i953e6b3s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

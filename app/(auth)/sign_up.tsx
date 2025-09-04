@@ -6,15 +6,15 @@ import { ArrowRight, Eye, EyeOff, Lock, Mail, Phone, User as UserIcon } from 'lu
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
-  Alert,
-  KeyboardAvoidingView,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
+    Alert,
+    KeyboardAvoidingView,
+    Platform,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
 } from 'react-native';
 
 export default function SignUpScreen() {
@@ -74,6 +74,7 @@ export default function SignUpScreen() {
             firstName: formData.firstName,
             lastName: formData.lastName,
             phone: formData.phone,
+            role: 'user',
         });
 
         if (error) {

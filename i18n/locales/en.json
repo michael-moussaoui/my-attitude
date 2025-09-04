@@ -15,7 +15,19 @@
         "filter": "Filter",
         "clear": "Clear",
         "submit": "Submit",
-        "close": "Close"
+        "close": "Close",
+        "info": "Information",
+        "loadingClients": "Loading clients...",
+        "permissionDenied": "Permission Denied",
+        "na": "N/A",
+        "locale": "en-US",
+        "seeAll": "See All",
+        "you": "You",
+        "booked": "Booked",
+        "feed": "News feed",
+        "notSet": "Not set",
+        "yes": "Yes",
+        "no": "No"
     },
     "navigation": {
         "home": "Home",
@@ -29,7 +41,8 @@
         "sessions": "Sessions",
         "analytics": "Analytics",
         "media": "Media Library",
-        "settings": "Settings"
+        "settings": "Settings",
+        "settingsSubtitle": "App configuration"
     },
     "auth": {
         "signIn": "Sign In",
@@ -37,12 +50,21 @@
         "signOut": "Sign Out",
         "email": "Email",
         "password": "Password",
-        "confirmPassword": "Confirm Password",
-        "forgotPassword": "Forgot Password?",
-        "resetPassword": "Reset Password",
-        "createAccount": "Create Account",
+        "confirmPassword": "Confirm password",
+        "forgotPassword": "Forgot password?",
+        "resetPassword": "Reset password",
+        "createAccount": "Create an account",
         "alreadyHaveAccount": "Already have an account?",
-        "dontHaveAccount": "Don't have an account?"
+        "dontHaveAccount": "Don't have an account?",
+        "welcomeBackTitle": "Welcome Back",
+        "welcomeBackSubtitle": "Sign in to continue your wellness journey",
+        "emailRequired": "Email is required",
+        "invalidEmail": "Please enter a valid email",
+        "passwordRequired": "Password is required",
+        "enterYourEmailPlaceholder": "Enter your email",
+        "enterYourPasswordPlaceholder": "Enter your password",
+        "signingIn": "Signing In...",
+        "signInFailed": "Sign In Failed"
     },
     "home": {
         "welcome": "Welcome to Attitude Cryo",
@@ -52,41 +74,53 @@
         "viewHistory": "View History",
         "scanQR": "Scan QR Code",
         "recentSessions": "Recent Sessions",
-        "upcomingSessions": "Upcoming Sessions"
+        "noRecentSessions": "No recent sessions found.",
+        "upcomingSessions": "Upcoming Sessions",
+        "search": "Search"
     },
     "booking": {
         "title": "Book a Session",
-        "selectTherapy": "Select Therapy Type",
-        "cryotherapy": "Cryotherapy",
-        "infratherapy": "Infratherapy",
-        "teslaFormer": "Tesla Former",
-        "selectDate": "Select Date",
-        "selectTime": "Select Time",
-        "selectSymptoms": "Select Symptoms",
-        "selectPainAreas": "Select Pain Areas",
-        "additionalNotes": "Additional Notes",
-        "confirmBooking": "Confirm Booking",
-        "bookingConfirmed": "Booking Confirmed!",
         "therapyTypes": {
             "cryotherapy": {
                 "name": "Cryotherapy",
-                "description": "Whole body cold therapy for recovery and wellness",
-                "duration": "3-5 minutes",
-                "temperature": "-110°C to -140°C"
+                "description": "Full body cold therapy for recovery and well-being.",
+                "duration": "3 min",
+                "temperature": "-110°C"
             },
             "infratherapy": {
                 "name": "Infratherapy",
-                "description": "Infrared therapy for deep tissue healing",
-                "duration": "15-30 minutes",
-                "temperature": "40°C to 60°C"
+                "description": "Infrared heat for deep muscle relaxation and detoxification.",
+                "duration": "30 min",
+                "temperature": "60-70°C"
             },
             "teslaFormer": {
                 "name": "Tesla Former",
-                "description": "Electromagnetic muscle stimulation therapy",
-                "duration": "20-30 minutes",
-                "intensity": "Adjustable"
+                "description": "High-intensity electromagnetic stimulation for muscle toning.",
+                "duration": "30 min",
+                "intensity": "High"
             }
-        }
+        },
+        "notAuthenticatedToBook": "You must be logged in to book a session.",
+        "slotAlreadyBooked": "This time slot is already booked. Please choose another one.",
+        "bookingConfirmed": "Booking Confirmed!",
+        "bookingSuccessMessage": "Your session has been successfully booked.",
+        "errorBookingSession": "An error occurred while booking your session. Please try again.",
+        "errorLoadingBookings": "Error loading booked sessions.",
+        "selectTherapy": "Select Your Therapy",
+        "selectDateAndTime": "Select Date & Time",
+        "selectDate": "Select Date",
+        "selectTime": "Select Time",
+        "bookedSessionsForDate": "Booked Sessions for {date}",
+        "noBookingsForDate": "No bookings for this date.",
+        "selectSymptoms": "Select Your Symptoms",
+        "additionalNotes": "Additional Notes",
+        "notesPlaceholder": "Add any additional notes or specific requests...",
+        "confirmBooking": "Confirm Booking",
+        "therapy": "Therapy",
+        "date": "Date",
+        "time": "Time",
+        "symptoms": "Symptoms",
+        "notes": "Notes"
     },
     "painMap": {
         "title": "Pain Map",
@@ -111,9 +145,55 @@
             "feet": "Feet"
         }
     },
+    "chat": {
+        "chatTitle": "Conversation",
+        "placeholder": "Type your message...",
+        "loadingMessagesError": "Error loading messages.",
+        "sendMessageError": "Error sending message.",
+        "noAdminError": "No admin found.",
+        "invalidSessionError": "Invalid chat session."
+    },
+    "adminChatList": {
+        "title": "Chat List",
+        "noChats": "No chats yet."
+    },
+    "feed": {
+        "publicFeedTitle": "Public Feed",
+        "placeholder": "What's new?",
+        "noContentError": "Please enter text or select an image.",
+        "authError": "You must be logged in to perform this action.",
+        "loadingPostsError": "Error loading posts.",
+        "imageUploadError": "Error uploading image.",
+        "postError": "Error during posting.",
+        "permissionError": "You do not have permission to perform this action.",
+        "likeError": "Error liking/unliking the post.",
+        "deleteError": "Error deleting the post.",
+        "deletePermissionError": "You do not have permission to delete this post.",
+        "alreadyDeletedError": "This post has already been deleted.",
+        "deleteConfirmTitle": "Confirm deletion",
+        "deleteConfirmMessage": "Are you sure you want to delete this post?",
+        "deleteSuccessTitle": "Deletion successful",
+        "deleteSuccess": "The post has been deleted successfully.",
+        "noCommentContentError": "Please enter a comment.",
+        "commentError": "Error adding the comment.",
+        "commentPlaceholder": "Add a comment...",
+        "deleteCommentConfirmTitle": "Confirm comment deletion",
+        "deleteCommentConfirmMessage": "Are you sure you want to delete this comment?",
+        "deleteCommentSuccessTitle": "Deletion successful",
+        "deleteCommentSuccess": "The comment has been deleted successfully.",
+        "deleteCommentError": "Error deleting the comment.",
+        "commentAlreadyDeletedError": "This comment has already been deleted.",
+        "deleteCommentPermissionError": "You do not have permission to delete this comment.",
+        "commentsFetchError": "Error loading comments."
+    },
     "history": {
         "title": "Session History",
-        "noSessions": "No sessions found",
+        "rated": "Rated",
+        "notRated": "Not Rated",
+        "rateNow": "Rate Now",
+        "noSessionsFound": "No sessions found for this user or filter.",
+        "errorLoadingSessions": "Failed to load session history. Please try again.",
+        "noSessionsForType": "No sessions found for this therapy type.",
         "sessionDetails": "Session Details",
         "date": "Date",
         "time": "Time",
@@ -122,7 +202,27 @@
         "rating": "Rating",
         "notes": "Notes",
         "images": "Images",
-        "feedback": "Feedback"
+        "feedback": "Feedback",
+        "evaluateSessionTitle": "Evaluate your session",
+        "sessionOf": "Session of",
+        "all": "All",
+        "thisMonth": "This Month",
+        "lastMonth": "Last Month",
+        "thisWeek": "This Week",
+        "searchPlaceholder": "Search for a session..."
+    },
+    "sessionDetails": {
+        "rateYourSession": "Rate your session",
+        "notAuthenticated": "You must be logged in to rate sessions.",
+        "pleaseSelectRating": "Please select a rating (1-5 stars).",
+        "alreadyRated": "This session has already been rated by you.",
+        "ratingSubmittedSuccessfully": "Rating submitted successfully!",
+        "errorSubmittingRating": "Failed to submit rating. Please try again.",
+        "yourRating": "Your Rating:",
+        "yourComment": "Your Comment (optional):",
+        "submitRating": "Submit Rating",
+        "alreadyRatedStatus": "Already Rated",
+        "thankYouForRating": "Thank you for your rating!"
     },
     "profile": {
         "title": "Profile",
@@ -136,14 +236,53 @@
         "notifications": "Notifications",
         "privacy": "Privacy",
         "support": "Support",
-        "about": "About"
+        "about": "About",
+        "adminPanel": "Admin Panel",
+        "adminPanelSubtitle": "Manage clients and sessions",
+        "userRole": "User",
+        "adminRole": "Admin",
+        "noUserError": "No user logged in",
+        "photoPermissionDenied": "Photo access permissions denied",
+        "photoUpdated": "Profile photo updated successfully",
+        "success": "Success",
+        "totalSessions": "Sessions",
+        "averageRating": "Avg. Rating",
+        "monthlySessions": "This Month",
+        "errorLoadingStats": "Failed to load stats.",
+        "isAthlete": "Athlete",
+        "sport": "Sport",
+        "sportPlaceholder": "Enter your sport (e.g., Football, Tennis)",
+        "sportRequired": "Sport is required if you are an athlete."
+    },
+    "profileEdit": {
+        "title": "Edit Profile",
+        "notAuthenticated": "You are not authenticated.",
+        "profileUpdated": "Profile updated successfully!"
+    },
+    "preferences": {
+        "title": "Preferences",
+        "darkMode": "Dark Mode",
+        "pushNotifications": "Push Notifications"
+    },
+    "privacy": {
+        "title": "Privacy",
+        "dataSharing": "Data Sharing",
+        "profileVisibility": "Profile Visibility"
     },
     "qr": {
         "title": "QR Code Scanner",
         "scanInstruction": "Point your camera at the QR code",
         "sessionLogged": "Session logged successfully!",
         "invalidCode": "Invalid QR code",
-        "permissionDenied": "Camera permission denied"
+        "permissionDenied": "Camera permission denied",
+        "scanQR": "Scan QR Code",
+        "requestingPermission": "Requesting camera permission...",
+        "permissionRequired": "Camera permission is required to scan QR codes",
+        "grantPermission": "Grant Permission",
+        "qrCodeScannedSuccessfully": "QR Code scanned successfully!",
+        "notAuthenticatedToLogSession": "You must be logged in to log a session via QR code.",
+        "sessionLoggedForRoom": "Session logged for room:",
+        "errorLoggingSession": "Failed to log session via QR. Please try again."
     },
     "feedback": {
         "title": "Session Feedback",
@@ -161,7 +300,12 @@
             "revenue": "Revenue",
             "topSymptoms": "Top Symptoms",
             "sessionsByTherapy": "Sessions by Therapy",
-            "clientSatisfaction": "Client Satisfaction"
+            "clientSatisfaction": "Client Satisfaction",
+            "analytics": "Analytics"
+        },
+        "chat": {
+            "title": "Chat",
+            "subtitle": "Manage your conversations with users."
         },
         "clients": {
             "title": "Client Management",
@@ -172,10 +316,24 @@
             "lastVisit": "Last Visit",
             "status": "Status",
             "active": "Active",
-            "inactive": "Inactive"
+            "inactive": "Inactive",
+            "totalClients": "Total Clients",
+            "admins": "Admins",
+            "users": "Users",
+            "errorLoadingClients": "Failed to load clients. Please try again.",
+            "onlyAdminsCanChangeRoles": "Only administrators can change roles.",
+            "changeRoleFor": "Change Role for {{clientName}}",
+            "userRole": "User",
+            "adminRole": "Admin",
+            "changeRole": "Change Role",
+            "roleUpdatedSuccessfully": "Role for {{clientName}} updated to {{newRole}} successfully!",
+            "errorUpdatingRole": "Failed to update role. Please try again.",
+            "joinDate": "Join Date",
+            "subtitle": "Manage client accounts"
         },
         "sessions": {
             "title": "Session Management",
+            "all": "All",
             "addSession": "Add Session",
             "editSession": "Edit Session",
             "sessionDetails": "Session Details",
@@ -184,8 +342,166 @@
             "status": "Status",
             "scheduled": "Scheduled",
             "completed": "Completed",
-            "cancelled": "Cancelled"
+            "cancelled": "Cancelled",
+            "total": "Total",
+            "evaluation": "Evaluation",
+            "noSessionsFound": "No sessions found.",
+            "subtitle": "View and manage sessions",
+            "imageManagement": "Image Management",
+            "sessionDuration": "Session Duration",
+            "uploadImage": "Upload Image",
+            "imageUploadSuccess": "Image uploaded successfully!",
+            "imageUploadError": "Error uploading image.",
+            "updateDurationSuccess": "Session duration updated successfully!",
+            "updateDurationError": "Error updating session duration.",
+            "selectImageSource": "Select Image Source",
+            "chooseFromLibrary": "Choose from Library",
+            "takePhoto": "Take a Photo",
+            "noImageSelected": "No image selected.",
+            "imagePreview": "Image Preview",
+            "uploadingImage": "Uploading image...",
+            "deleteImageConfirm": "Are you sure you want to delete this image?",
+            "deleteImageSuccess": "Image deleted successfully!",
+            "deleteImageError": "Error deleting image.",
+            "duration": "Duration",
+            "updateSessionDetails": "Update Session Details",
+            "sessionDetailsUpdated": "Session details updated successfully!",
+            "updateSessionError": "Error updating session details."
+        },
+        "suggestions": {
+            "title": "Suggestions",
+            "subtitle": "Suggestions Management",
+            "nonLues": "Unread",
+            "enCours": "In Progress",
+            "traitees": "Completed",
+            "rejetee": "Rejected",
+            "realisee": "Completed",
+            "nonRealisee": "Not Completed",
+            "aucuneNonLue": "No unread suggestions",
+            "aucuneEnCours": "No suggestions in progress",
+            "aucuneTraitee": "No completed suggestions",
+            "aucuneRejetee": "No rejected suggestions",
+            "statutMisAJour": "Status updated",
+            "miseAJourReussie": "Update successful",
+            "erreur": "Error",
+            "miseAJourEchouee": "Update failed"
+        },
+        "notifications": {
+            "sendNotification": "Send Notification",
+            "notificationTitle": "Notification Title",
+            "notificationMessage": "Notification Message",
+            "notificationType": "Notification Type",
+            "typeInfo": "Info",
+            "typeUpdate": "Update",
+            "typeNews": "News",
+            "send": "Send",
+            "fillAllFields": "Please fill in all fields.",
+            "notificationSentSuccessfully": "Notification sent successfully!",
+            "errorSendingNotification": "Error sending notification."
+        },
+        "notificationManagementSubtitle": "Manage and send notifications",
+        "analytics": {
+            "subtitle": "View detailed analytics"
         }
+    },
+    "notifications": {
+        "notificationTitle": "Notifications Management",
+        "title": "Notifications",
+        "notAuthenticated": "You must be logged in to view notifications.",
+        "noNotifications": "No notifications found.",
+        "notificationMarkedAsRead": "Notification marked as read.",
+        "errorMarkingAsRead": "Error marking notification as read.",
+        "notificationDeleted": "Notification deleted.",
+        "errorDeletingNotification": "Error deleting notification.",
+        "markAsRead": "Mark as Read",
+        "delete": "Delete"
+    },
+    "search": {
+        "whatIsYourGoal": "What is your goal?",
+        "button": {
+            "sport": "Sport",
+            "pain": "Pain",
+            "wellness": "Wellness",
+            "sportRecovery": "Sport Recovery"
+        },
+        "data": {
+            "sport": {
+                "title1": "Sport Objective 1",
+                "desc1": "Description for Sport Objective 1.",
+                "session1": "Session for Sport Objective 1"
+            },
+            "sport.title2": "Sport Objective 2",
+            "sport.desc2": "Description for Sport Objective 2.",
+            "sport.session2": "Session for Sport Objective 2",
+            "pain": {
+                "title1": "Pain Objective 1",
+                "desc1": "Description for Pain Objective 1.",
+                "session1": "Session for Pain Objective 1"
+            },
+            "pain.title2": "Pain Objective 2",
+            "pain.desc2": "Description for Pain Objective 2.",
+            "pain.session2": "Session for Pain Objective 2",
+            "wellness": {
+                "title1": "Wellness Objective 1",
+                "desc1": "Description for Wellness Objective 1.",
+                "session1": "Session for Wellness Objective 1"
+            },
+            "wellness.title2": "Wellness Objective 2",
+            "wellness.desc2": "Description for Wellness Objective 2.",
+            "wellness.session2": "Session for Wellness Objective 2",
+            "sportRecovery": {
+                "title1": "Sport Recovery Objective 1",
+                "desc1": "Description for Sport Recovery Objective 1.",
+                "session1": "Session for Sport Recovery Objective 1"
+            },
+            "sportRecovery.title2": "Sport Recovery Objective 2",
+            "sportRecovery.desc2": "Description for Sport Recovery Objective 2.",
+            "sportRecovery.session2": "Session for Sport Recovery Objective 2"
+        },
+        "noDataFoundForObjective": "No data found for this objective.",
+        "searchDataNotLoaded": "Search data not loaded.",
+        "noObjectivesFound": "No objectives found. Please add some via the admin panel.",
+        "admin": {
+            "manageObjectives": "Manage Objectives",
+            "objectives": "Objectives",
+            "addObjective": "Add Objective",
+            "noObjectivesYet": "No objectives added yet.",
+            "editObjective": "Edit Objective",
+            "objectiveDeletedSuccessfully": "Objective deleted successfully!",
+            "errorDeletingObjective": "Error deleting objective.",
+            "objectiveUpdatedSuccessfully": "Objective updated successfully!",
+            "objectiveAddedSuccessfully": "Objective added successfully!",
+            "errorSavingObjective": "Error saving objective.",
+            "detailsFor": "Details for",
+            "addDetail": "Add Detail",
+            "noDetailsYet": "No details added yet for this objective.",
+            "editDetail": "Edit Detail",
+            "detailDeletedSuccessfully": "Detail deleted successfully!",
+            "errorDeletingDetail": "Error deleting detail.",
+            "detailUpdatedSuccessfully": "Detail updated successfully!",
+            "detailAddedSuccessfully": "Detail added successfully!",
+            "errorSavingDetail": "Error saving detail.",
+            "fillAllFields": "Please fill in all fields.",
+            "selectObjectiveFirst": "Please select an objective first.",
+            "textKeyPlaceholder": "Translation Key for Text (e.g., search.button.sport)",
+            "categoryPlaceholder": "Category (e.g., sport)",
+            "imageNamePlaceholder": "Image File Name (e.g., sport.png)",
+            "orderPlaceholder": "Order (number)",
+            "titleKeyPlaceholder": "Translation Key for Title (e.g., search.data.sport.title1)",
+            "descriptionKeyPlaceholder": "Translation Key for Description (e.g., search.data.sport.desc1)",
+            "sessionKeyPlaceholder": "Translation Key for Session (e.g., search.data.sport.session1)",
+            "confirmDeleteObjective": "Are you sure you want to delete this objective and all its associated details?",
+            "confirmDeleteDetail": "Are you sure you want to delete this detail?",
+            "manageDetails": "Manage Details"
+        },
+        "noDetailsData": "No details data found.",
+        "selectAChoice": "Select a Choice",
+        "noSessionSelected": "No session selected.",
+        "youHaveChosen": "You have chosen:",
+        "session": "Session:",
+        "bookingFeatureComingSoon": "Booking feature coming soon!",
+        "bookASession": "Book a Session",
+        "moreInfoWebsite": "For more information, please visit our website."
     },
     "symptoms": {
         "muscleStiffness": "Muscle Stiffness",
@@ -198,5 +514,39 @@
         "skinHealth": "Skin Health",
         "sleepImprovement": "Sleep Improvement",
         "immuneBoost": "Immune Boost"
+    },
+    "tracker": {
+        "progressTrackerTitle": "Progress Tracker",
+        "progressFetchError": "Error fetching data. Please try again.",
+        "noContentError": "Please fill in all fields before submitting.",
+        "numericValueError": "Values must be numbers between 0 and 10.",
+        "progressSuccessTitle": "Success",
+        "progressSuccess": "Your progress has been successfully recorded.",
+        "permissionError": "You do not have permission to do this.",
+        "progressError": "An error occurred while saving your progress.",
+        "date": "Date",
+        "painLevel": "Pain Level",
+        "sleepQuality": "Sleep Quality",
+        "energyLevel": "Energy Level",
+        "progressChart": "Progress Chart",
+        "painLevelPlaceholder": "Pain Level (0-10)",
+        "sleepQualityPlaceholder": "Sleep Quality (0-10)",
+        "energyLevelPlaceholder": "Energy Level (0-10)",
+        "submitProgress": "Submit",
+        "historyTitle": "Entry History",
+        "noEntries": "No entries found.",
+        "authenticating": "Checking authentication...",
+        "loginRequired": "Please log in to track your progress.",
+        "loadingHistory": "Loading history...",
+        "minEntriesChart": "Please log at least one entry to display the chart.",
+        "chartLegendPain": "Pain",
+        "chartLegendSleep": "Sleep",
+        "chartLegendEnergy": "Energy",
+        "resetConfirmTitle": "Confirm Reset",
+        "resetConfirmMessage": "Are you sure you want to delete all progress entries? This action cannot be undone.",
+        "resetButton": "Reset",
+        "resetSuccessTitle": "Reset Successful",
+        "resetSuccess": "All progress entries have been deleted.",
+        "resetError": "Failed to reset progress entries."
     }
 }

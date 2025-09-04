@@ -1,5 +1,6 @@
 export interface User {
     id: string;
+    uid?: string;
     email: string;
     firstName?: string | null;
     lastName?: string | null;
@@ -7,7 +8,12 @@ export interface User {
     dateOfBirth?: string | null;
     createdAt?: string | null;
     updatedAt?: string | null;
+    role: 'user' | 'admin';
+    photoUrl?: string | null;
+    isAthlete?: boolean | null | undefined;
+    sport?: string | null | undefined;
 }
+
 export interface AuthState {
     user: User | null;
     isLoading: boolean;
@@ -20,6 +26,9 @@ export interface SignUpData {
     firstName: string;
     lastName: string;
     phone?: string;
+    role: 'user' | 'admin';
+    isAthlete?: boolean;
+    sport?: string;
 }
 
 export interface SignInData {
@@ -36,4 +45,7 @@ export interface UpdateProfileData {
     lastName?: string;
     phone?: string;
     dateOfBirth?: string;
+    photoUrl?: string;
+    isAthlete?: boolean;
+    sport?: string,
 }

@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import * as Localization from 'expo-localization'; // Ajouté pour la détection de langue
-import i18nCore from 'i18next'; // Renommé l'importation par défaut en 'i18nCore' pour éviter le conflit de noms ESLint
+import * as Localization from 'expo-localization';
+import i18nCore from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import en from './locales/en.json';
@@ -11,7 +11,6 @@ const LANGUAGE_DETECTOR = {
     async: true,
     detect: async (callback: (lng: string) => void) => {
         try {
-            // Utiliser Expo-Localization pour détecter la langue du système
             const systemLanguage = Localization.getLocales()[0].languageCode;
             const savedLanguage = await AsyncStorage.getItem('user-language');
 
@@ -20,10 +19,10 @@ const LANGUAGE_DETECTOR = {
             } else if (systemLanguage) {
                 callback(systemLanguage);
             } else {
-                callback('en'); // Langue par défaut si aucune n'est détectée
+                callback('en');
             }
-        } catch (_error) { // Utilisation de _error pour éviter l'avertissement ESLint si non utilisé directement
-            console.error("Error detecting language:", _error); // Ajout d'un log d'erreur plus détaillé
+        } catch (_error) {
+            console.error("Error detecting language:", _error);
             callback('en');
         }
     },
@@ -31,19 +30,20 @@ const LANGUAGE_DETECTOR = {
     cacheUserLanguage: async (lng: string) => {
         try {
             await AsyncStorage.setItem('user-language', lng);
-        } catch (_error) { // Utilisation de _error pour éviter l'avertissement ESLint si non utilisé directement
-            console.error('Error saving language', _error); // Changé console.log en console.error et utilisé _error
+        } catch (_error) {
+            console.error('Error saving language', _error);
         }
     },
 };
 
-i18nCore // Utilisation de 'i18nCore'
+// eslint-disable-next-line import/no-named-as-default-member
+i18nCore
     .use(LANGUAGE_DETECTOR)
     .use(initReactI18next)
     .init({
         compatibilityJSON: 'v4',
         fallbackLng: 'en',
-        debug: false, // Mettez à true pour le débogage si nécessaire
+        debug: false,
         resources: {
             en: { translation: en },
             fr: { translation: fr },
@@ -53,4 +53,4 @@ i18nCore // Utilisation de 'i18nCore'
         },
     });
 
-export default i18nCore; // Exportation de 'i18nCore'
+export default i18nCore; 

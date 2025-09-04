@@ -2,9 +2,10 @@
 // Ce fichier initialise l'application Firebase et exporte les services nécessaires.
 
 import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
-import { FirebaseApp, getApp, getApps, initializeApp } from 'firebase/app'; // Ajout de getApps et getApp
-import { Auth, getAuth, getReactNativePersistence, initializeAuth } from 'firebase/auth';
+import { FirebaseApp, getApp, getApps, getReactNativePersistence, initializeApp } from 'firebase/app'; // Ajout de getApps et getApp
+import { Auth, getAuth, initializeAuth } from 'firebase/auth';
 import { Firestore, getFirestore } from 'firebase/firestore';
+import { FirebaseStorage, getStorage } from 'firebase/storage';
 
 // Récupération des variables d'environnement
 const firebaseConfig = {
@@ -48,5 +49,6 @@ try {
 
 export const auth: Auth = authInstance;
 export const db: Firestore = getFirestore(app);
+export const storage: FirebaseStorage = getStorage(app);
 
 export default app;
